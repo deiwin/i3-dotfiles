@@ -184,7 +184,6 @@ exec --no-startup-id i3-msg 'workspace 3; exec sflphone; workspace 1'
 exec --no-startup-id i3-msg 'workspace 1; exec chromium'
 
 #exec i3-sensible-terminal
-#exec xfce4-terminal
 
 
 bindsym $mod+Shift+w exec i3lock -c 000000
