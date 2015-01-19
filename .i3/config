@@ -157,16 +157,16 @@ bar {
 
   # Colors
   colors  {
-  
+
     background #20293A
     statusline #aaaaaa
     separator  #20293A
-       
+
   #  class            | border  |  background  |   text  |
   #-------------------|---------|--------------|---------|
-  
+
     focused_workspace  #20293A #20293A #ffffff
-    active_workspace   #ff8c00 #20293A #ffffff 
+    active_workspace   #ff8c00 #20293A #ffffff
     inactive_workspace #20293A #20293A #aaaaaa
     urgent_workspace   #20293A #20293A #FCF5C7
   }
@@ -208,22 +208,19 @@ for_window [class="Chromium"] border none
 for_window [class="(?i)subl3"] border none
 for_window [class="(?i)termite"] border none
 for_window [class="(?i)atom"] floating disable, border none
-#for_window [class="(?i)xfce4-notifyd"] move absloute 100px 100px
-#for_window [class="(?i)gsimplecal"] floating enable; exec notify-send "1"; move absolute position 20 px 20 px; exec notify-send "test"
-for_window [class="(?i)gsimplecal"] border none 
 
 # Startup
 
-#exec ~/.i3/startup.sh
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id kalu
 exec --no-startup-id redshift -l 58.23:26.43
-exec --no-startup-id dropboxd
+exec --no-startup-id kalu
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id setxkbmap -layout us,ee -option grp:caps_toggle
-exec --no-startup-id sh /home/deiwin/.fehbg
+exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id compton -b
 exec --no-startup-id kupfer --no-splash
+
+exec --no-startup-id dropboxd
 exec --no-startup-id synergyc -n deiwin-arch0 deiwin-desktop:24800
 exec --no-startup-id synergyc -n deiwin-arch1 deiwin-desktop:24801
 exec --no-startup-id synergyc -n deiwin-arch2 deiwin-desktop:24802
