@@ -36,7 +36,5 @@ vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
 mkdir -p Pictures/Wallpapers
 wget -O Pictures/Wallpapers/simple_rocket.png 'http://static.simpledesktops.com/uploads/desktops/2012/07/03/simpledesktops.png'
 feh --bg-scale Pictures/Wallpapers/simple_rocket.png
-
-
 ```
 PS. the background is stolen from a [/r/unixporn thread](http://www.reddit.com/r/unixporn/comments/2q6nbm/boringwmi3_fake_it_till_you_make_it/)
