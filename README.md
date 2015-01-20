@@ -15,6 +15,7 @@ Currently the following arch packages are used:
 - [compton](https://aur.archlinux.org/packages/compton/) to enable opacity for termite
 - [polkit](https://www.archlinux.org/packages/?name=polkit) to allow non-root
   users to issue power-related commands
+- [polkit-gnome](https://www.archlinux.org/packages/?name=polkit-gnome) as the polkit agent
 - [ttf-droid](https://www.archlinux.org/packages/community/any/ttf-droid/) as the font
 - [mpc](https://www.archlinux.org/packages/?name=mpc) for mpd controls
 - [npm-applet](https://www.archlinux.org/packages/?name=network-manager-applet)
