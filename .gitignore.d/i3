@@ -24,3 +24,5 @@
 !/.i3/calendar
 !/.i3/config
 !/.i3/musickeys.sh
+!/.xinitrc
+!/.Xresources
