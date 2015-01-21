@@ -17,6 +17,7 @@ Currently the following arch packages are used:
   users to issue power-related commands
 - [polkit-gnome](https://www.archlinux.org/packages/?name=polkit-gnome) as the polkit agent
 - [ttf-droid](https://www.archlinux.org/packages/community/any/ttf-droid/) as the font
+- [ttf-symbola](https://www.archlinux.org/packages/community/any/ttf-symbola/) for icons on statusbar
 - [mpc](https://www.archlinux.org/packages/?name=mpc) for mpd controls
 - [npm-applet](https://www.archlinux.org/packages/?name=network-manager-applet)
   for network management
@@ -28,7 +29,7 @@ Currently the following arch packages are used:
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks kupfer termite compton polkit ttf-droid mpc network-manager-applet redshift kalu feh
+yaourt -S i3 dunst gsimplecal i3blocks kupfer termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
