@@ -26,6 +26,11 @@ Currently the following arch packages are used:
 - [kalu](https://aur.archlinux.org/packages/kalu/) to get notified of pacman updates
 - [feh](https://www.archlinux.org/packages/?name=feh) to set the background
 
+I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
+
+And [grub-holdshift](https://aur.archlinux.org/packages/grub-holdshift/) to avoid
+waiting for grub at every boot
+
 ## How to use
 ```
 # Install dependencies
@@ -37,6 +42,6 @@ vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
 # Set background
 mkdir -p Pictures/Wallpapers
 wget -O Pictures/Wallpapers/simple_rocket.png 'http://static.simpledesktops.com/uploads/desktops/2012/07/03/simpledesktops.png'
-feh --bg-scale Pictures/Wallpapers/simple_rocket.png
+ln -s Pictures/Wallpapers/simple_rocket.png .wallpaper
 ```
 PS. the background is stolen from a [/r/unixporn thread](http://www.reddit.com/r/unixporn/comments/2q6nbm/boringwmi3_fake_it_till_you_make_it/)
