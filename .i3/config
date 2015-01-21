@@ -224,3 +224,5 @@ exec --no-startup-id synergyc -n deiwin-arch4 deiwin-desktop:24804
 
 
 focus_follows_mouse no
+
+exec i3lock -i ~/.wallpaper
