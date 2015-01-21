@@ -160,7 +160,7 @@ bar {
 
     background #20293A
     statusline #aaaaaa
-    separator  #20293A
+    separator  #566E9C
 
   #  class            | border  |  background  |   text  |
   #-------------------|---------|--------------|---------|
