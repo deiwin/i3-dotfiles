@@ -199,7 +199,8 @@ bindsym XF86AudioPrev exec mpc prev
 
 # Floating
 
-for_window [class=".*"] border none
+new_window 1pixel
+new_float 1pixel
 
 # Startup
 
