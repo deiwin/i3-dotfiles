@@ -17,7 +17,7 @@ message() {
 }
 
 case $1 in
-  -e) LABEL="logout"  ; [ -z "$DISPLAY" ] && ACTION="logout" || ACTION="i3-msg exit" ;;
+  -e) LABEL="logout"  ; ACTION="i3-msg exit" ;;
   -r) LABEL="restart" ; ACTION="systemctl reboot" ;;
   -s) LABEL="shutdown"; ACTION="systemctl poweroff" ;;
   *)             message          ;;
@@ -40,6 +40,7 @@ fi
 #          --text="are you sure you want to $LABEL?"; then
 
   # gracefully close all apps
+  pkill mono
   i3-msg [class=".*"] kill
   #wmctrl -l | awk '{print $1}' | while read APP; do
   #  wmctrl -i -c $APP || echo "$APP not killed"
