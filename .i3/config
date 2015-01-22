@@ -216,12 +216,6 @@ exec --no-startup-id kupfer --no-splash
 
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id dropboxd
-exec --no-startup-id synergyc -n deiwin-arch0 deiwin-desktop:24800
-exec --no-startup-id synergyc -n deiwin-arch1 deiwin-desktop:24801
-exec --no-startup-id synergyc -n deiwin-arch2 deiwin-desktop:24802
-exec --no-startup-id synergyc -n deiwin-arch3 deiwin-desktop:24803
-exec --no-startup-id synergyc -n deiwin-arch4 deiwin-desktop:24804
-
 
 focus_follows_mouse no
 

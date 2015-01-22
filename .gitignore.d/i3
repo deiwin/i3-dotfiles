@@ -15,6 +15,13 @@
 !/.config/kupfer
 !/.config/kupfer/kupfer.cfg
 !/.config/locale.conf
+!/.config/systemd
+!/.config/systemd/user
+!/.config/systemd/user/synergy.service
+!/.config/systemd/user/synergy1.service
+!/.config/systemd/user/synergy2.service
+!/.config/systemd/user/synergy3.service
+!/.config/systemd/user/synergy4.service
 !/.config/termite
 !/.config/termite/config
 !/.gitignore.d
