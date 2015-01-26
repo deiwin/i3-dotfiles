@@ -10,7 +10,7 @@ Currently the following arch packages are used:
 - [gsimplecal](https://www.archlinux.org/packages/community/x86_64/gsimplecal/)
   a simple calendar widget
 - [i3blocks](https://aur.archlinux.org/packages/i3blocks) for the status bar
-- [kupfer](https://aur.archlinux.org/packages/kupfer/) as the application launcher
+- [rofi](https://aur.archlinux.org/packages/rofi-git/) as the application launcher
 - [termite](https://wiki.archlinux.org/index.php/Termite) as the terminal emulator
 - [compton](https://aur.archlinux.org/packages/compton/) to enable opacity for termite
 - [polkit](https://www.archlinux.org/packages/?name=polkit) to allow non-root
@@ -25,6 +25,7 @@ Currently the following arch packages are used:
   temperature management
 - [kalu](https://aur.archlinux.org/packages/kalu/) to get notified of pacman updates
 - [feh](https://www.archlinux.org/packages/?name=feh) to set the background
+- [qutebrowser](https://aur.archlinux.org/packages/qutebrowser/) as a minimalistic browser
 
 I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
 
@@ -34,7 +35,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks kupfer termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh
+yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
