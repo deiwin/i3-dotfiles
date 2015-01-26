@@ -12,9 +12,10 @@
 !/.config/kalu
 !/.config/kalu/kalu.conf
 !/.config/kalu/watched-aur.conf
-!/.config/kupfer
-!/.config/kupfer/kupfer.cfg
 !/.config/locale.conf
+!/.config/qutebrowser
+!/.config/qutebrowser/keys.conf
+!/.config/qutebrowser/qutebrowser.conf
 !/.config/systemd
 !/.config/systemd/user
 !/.config/systemd/user/synergy.service
