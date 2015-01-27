@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 num=`i3-msg -t get_workspaces | jq 'map(select(.focused == true))[0].num'`
 i3-input -F "rename workspace to \"$num: %s\"" -P 'New name: '
