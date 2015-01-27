@@ -31,6 +31,7 @@
 !/.i3/calendar
 !/.i3/config
 !/.i3/musickeys.sh
+!/.i3/rename_workspace.sh
 !/.xinitrc
 !/bin
 !/bin/graceful_shutdown.sh
