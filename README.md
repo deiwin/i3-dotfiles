@@ -26,6 +26,7 @@ Currently the following arch packages are used:
 - [kalu](https://aur.archlinux.org/packages/kalu/) to get notified of pacman updates
 - [feh](https://www.archlinux.org/packages/?name=feh) to set the background
 - [qutebrowser](https://aur.archlinux.org/packages/qutebrowser/) as a minimalistic browser
+- [jq](https://aur.archlinux.org/packages/jq/) to parse i3 IPC messages
 
 I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
 
@@ -35,7 +36,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser
+yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
