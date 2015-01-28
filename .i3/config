@@ -190,13 +190,10 @@ bindsym $mod+Shift+w exec i3lock -c 000000
 #bindsym $mod+Shift+w exec slimlock
 
 bindsym Print exec scrot
-#bindsym XF86AudioPlay exec ~/.i3/musickeys.sh play
-#bindsym XF86AudioNext exec ~/.i3/musickeys.sh next
-#bindsym XF86AudioPrev exec ~/.i3/musickeys.sh prev
-bindsym XF86AudioPlay exec mpc toggle
-bindsym XF86AudioStop exec mpc stop
-bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPrev exec mpc prev
+bindsym XF86AudioPlay exec ~/.i3/musickeys.sh toggle
+bindsym XF86AudioStop exec ~/.i3/musickeys.sh stop
+bindsym XF86AudioNext exec ~/.i3/musickeys.sh next
+bindsym XF86AudioPrev exec ~/.i3/musickeys.sh prev
 
 # Floating
 
