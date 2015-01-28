@@ -18,7 +18,7 @@ Currently the following arch packages are used:
 - [polkit-gnome](https://www.archlinux.org/packages/?name=polkit-gnome) as the polkit agent
 - [ttf-droid](https://www.archlinux.org/packages/community/any/ttf-droid/) as the font
 - [ttf-symbola](https://www.archlinux.org/packages/community/any/ttf-symbola/) for icons on statusbar
-- [mpc](https://www.archlinux.org/packages/?name=mpc) for mpd controls
+- [mpc](https://www.archlinux.org/packages/?name=mpc) to make media keys work with mpd
 - [npm-applet](https://www.archlinux.org/packages/?name=network-manager-applet)
   for network management
 - [redshift](https://www.archlinux.org/packages/?name=redshift) for screen color
@@ -27,6 +27,7 @@ Currently the following arch packages are used:
 - [feh](https://www.archlinux.org/packages/?name=feh) to set the background
 - [qutebrowser](https://aur.archlinux.org/packages/qutebrowser/) as a minimalistic browser
 - [jq](https://aur.archlinux.org/packages/jq/) to parse i3 IPC messages
+- [xdotool](https://www.archlinux.org/packages/?name=xdotool) to make media keys work with spotify
 
 I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
 
@@ -36,7 +37,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq
+yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq xdotool
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
