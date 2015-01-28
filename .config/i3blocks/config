@@ -24,11 +24,10 @@
 separator_block_width=15
 
 [MPD]
-#label=MPD
 label=♪
-command=mpc status | perl -ne "if (/\\[playing\\]/) {CORE::say '$(mpc current)'}"
+command=$HOME/.i3/music_name.sh
 color=#00FF00
-interval=20
+interval=5
 
 [volume]
 #label=VOL
