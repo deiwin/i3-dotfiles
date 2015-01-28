@@ -24,5 +24,7 @@ then
 elif mpc status
 then
   mpc $1
+else
+  exit 1
 fi
 exit 0
