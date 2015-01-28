@@ -2,27 +2,27 @@
 
 case $1 in
    "toggle")
-       key="XF86AudioPlay"
+       PLAYERCTL_COMMAND="play-pause"
        ;;
    "stop")
-       key="XF86AudioStop"
+       PLAYERCTL_COMMAND="stop"
        ;;
    "next")
-       key="XF86AudioNext"
+       PLAYERCTL_COMMAND="next"
        ;;
    "prev")
-       key="XF86AudioPrev"
+       PLAYERCTL_COMMAND="previous"
        ;;
    *)
        echo "Usage: $0 toggle|stop|next|prev"
        exit 1
         ;;
 esac
-SPOTIFY="Spotify Premium - Linux Preview"
-if xdotool search --name "$SPOTIFY"
+if playerctl status
 then
-  xdotool search --name "$SPOTIFY" key $key
-else
+  playerctl $PLAYERCTL_COMMAND
+elif mpc status
+then
   mpc $1
 fi
 exit 0
