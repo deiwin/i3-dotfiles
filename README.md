@@ -10,7 +10,8 @@ Currently the following arch packages are used:
 - [gsimplecal](https://www.archlinux.org/packages/community/x86_64/gsimplecal/)
   a simple calendar widget
 - [i3blocks](https://aur.archlinux.org/packages/i3blocks) for the status bar
-- [rofi](https://aur.archlinux.org/packages/rofi-git/) as the application launcher
+- [j4-dmenu-desktop-git](https://aur.archlinux.org/packages/j4-dmenu-desktop-git/) i3-dmenu-desktop upgrade
+- [dmenu2](https://aur.archlinux.org/packages/dmenu2/) a dmenu upgrade
 - [termite](https://wiki.archlinux.org/index.php/Termite) as the terminal emulator
 - [compton](https://aur.archlinux.org/packages/compton/) to enable opacity for termite
 - [polkit](https://www.archlinux.org/packages/?name=polkit) to allow non-root
@@ -37,7 +38,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks rofi-git termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl
+yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
