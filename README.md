@@ -5,6 +5,7 @@ I'm using RichiH/vcsh for dotfile management.
 ## Dependencies
 Currently the following arch packages are used:
 - **i3** obviously (but i3status is not actually currently used)
+- **suckless-tools** for dmenu
 - **i3blocks** for the status bar
 - **dunst** for notifications
 - **gsimplecal** a simple calendar widget
@@ -23,7 +24,7 @@ sudo apt-get --allow-unauthenticated install sur5r-keyring
 
 # Install dependencies
 sudo apt-get update
-sudo apt-get install i3 dunst gsimplecal i3blocks fonts-droid redshift feh jq xfce4-terminal
+sudo apt-get install i3 suckless-tools dunst gsimplecal i3blocks fonts-droid redshift feh jq xfce4-terminal
 
 # Disable xfce4-notifyd. I use dunst instead
 sudo mv /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service.disabled
