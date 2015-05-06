@@ -220,7 +220,7 @@ exec --no-startup-id compton -b
 exec --no-startup-id caffeine
 
 exec --no-startup-id pulseaudio -D
-exec --no-startup-id dropboxd
+exec --no-startup-id dropbox
 
 focus_follows_mouse no
 
