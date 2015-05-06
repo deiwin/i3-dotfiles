@@ -29,6 +29,7 @@ Currently the following arch packages are used:
 - [qutebrowser](https://aur.archlinux.org/packages/qutebrowser/) as a minimalistic browser
 - [jq](https://aur.archlinux.org/packages/jq/) to parse i3 IPC messages
 - [playerctl](https://aur.archlinux.org/packages/playerctl/) to make media keys work with spotify
+- [caffeine-ng](https://aur.archlinux.org/packages/caffeine-ng/) for caffeine
 
 I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
 
@@ -38,7 +39,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl
+yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl caffeine-ng
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
