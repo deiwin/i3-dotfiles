@@ -33,5 +33,6 @@
 !/.i3/config
 !/.i3/music_name.sh
 !/.i3/musickeys.sh
+!/.i3/pixelate_windows_lock.py
 !/.i3/rename_workspace.sh
 !/.xinitrc
