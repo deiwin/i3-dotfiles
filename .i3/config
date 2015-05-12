@@ -195,7 +195,7 @@ exec --no-startup-id i3-msg 'workspace 1; exec chromium'
 
 
 #bindsym $mod+Shift+w exec i3lock -c 000000
-bindsym $mod+Shift+w exec ~/.i3/pixelate_windows_lock.py
+bindsym $mod+Shift+w exec ~/.i3/pixelate_lock.sh
 #bindsym $mod+Shift+w exec slimlock
 
 bindsym Print exec scrot
@@ -225,4 +225,4 @@ exec --no-startup-id dropbox
 
 focus_follows_mouse no
 
-exec ~/.i3/pixelate_windows_lock.py
+exec i3lock -u -i ~/.wallpaper
