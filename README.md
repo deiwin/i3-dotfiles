@@ -31,7 +31,7 @@ Currently the following arch packages are used:
 - [jq](https://aur.archlinux.org/packages/jq/) to parse i3 IPC messages
 - [playerctl](https://aur.archlinux.org/packages/playerctl/) to make media keys work with spotify
 - [caffeine-ng](https://aur.archlinux.org/packages/caffeine-ng/) for caffeine
-- [xpyb](https://aur.archlinux.org/packages/xpyb/) and [python2-pillow](https://www.archlinux.org/packages/community/x86_64/python2-pillow/) for the pixelated i3lock script
+- [imagemagick](https://www.archlinux.org/packages/?sort=&q=imagemagick) for the pixelated i3lock script
 
 I also have autologin enabled, as described here: https://bbs.archlinux.org/viewtopic.php?pid=1348186#p1348186
 
@@ -53,4 +53,3 @@ ln -s Pictures/Wallpapers/simple_rocket.png .wallpaper
 feh  --bg-scale .wallpaper
 ```
 PS. the background is stolen from a [/r/unixporn thread](http://www.reddit.com/r/unixporn/comments/2q6nbm/boringwmi3_fake_it_till_you_make_it/)
-the pixelation script from [another thread](http://www.reddit.com/r/unixporn/comments/35m141/i3lock_why_blur_the_beauty/)
