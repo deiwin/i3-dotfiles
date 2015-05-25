@@ -12,6 +12,7 @@ Currently the following arch packages are used:
 - **redshift** for screen color temperature management
 - **feh** to set the background
 - **jq** to parse i3 IPC messages
+- **caffeine** to keep the screen from falling asleep during fullscreen apps
 
 Install cVim for chromium: https://github.com/1995eaton/chromium-vim
 
@@ -22,9 +23,12 @@ sudo echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /et
 sudo apt-get update
 sudo apt-get --allow-unauthenticated install sur5r-keyring
 
+# Add caffeine PPA
+sudo add-apt-repository ppa:caffeine-developers/ppa
+
 # Install dependencies
 sudo apt-get update
-sudo apt-get install i3 suckless-tools dunst gsimplecal i3blocks fonts-droid redshift feh jq xfce4-terminal
+sudo apt-get install i3 suckless-tools dunst gsimplecal i3blocks fonts-droid redshift feh jq xfce4-terminal caffeine
 
 # Disable xfce4-notifyd. I use dunst instead
 sudo mv /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service /usr/share/dbus-1/services/org.xfce.xfce4-notifyd.Notifications.service.disabled
