@@ -1,10 +1,13 @@
+[options]
+font = Droid Sans Mono 10
+
 [colors]
 # Base16 Default
 # Scheme: Chris Kempson (http://chriskempson.com)
 
 foreground      = #d8d8d8
 foreground_bold = #d8d8d8
-cursor          = #d8d8d8
+cursor          = #585858
 #background      = #181818
 background      = rgba(24, 24, 24, 0.95)
 
