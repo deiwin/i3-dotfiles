@@ -55,7 +55,7 @@ interval=30
 [disk-home]
 label=/
 #label=🏡
-instance=/home/deiwin
+#instance=/home/user
 command=/usr/share/i3blocks/disk
 interval=30
 
