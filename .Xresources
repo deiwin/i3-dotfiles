@@ -20,9 +20,3 @@
 *color14: #88bbbb
 *color15: #ddeeff
 
-
-rofi.background: #1a1b1d
-rofi.foreground: #adb7c1
-rofi.bordercolor: #222
-rofi.highlightbg: #285577
-rofi.highlightfg: #fff
