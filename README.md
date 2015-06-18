@@ -41,7 +41,7 @@ waiting for grub at every boot
 ## How to use
 ```
 # Install dependencies
-yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl caffeine-ng gnome-keyring xpyb python2-pillow
+yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compton polkit polkit-gnome ttf-droid ttf-symbola mpc network-manager-applet redshift kalu feh qutebrowser jq playerctl caffeine-ng gnome-keyring imagemagick
 
 # Clone  
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
