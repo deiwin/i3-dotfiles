@@ -181,22 +181,16 @@ bar {
 }
 
 # Assign workspaces
-
+assign [class="(?i)keepass2"] 5
 # Start on specific workspace
 exec --no-startup-id i3-msg 'workspace 5; exec keepass; workspace 1'
-assign [class="(?i)keepass2"] 5
-exec --no-startup-id i3-msg 'workspace 3; exec skype; workspace 1'
-assign [class="(?i)skype"] 3
 exec --no-startup-id i3-msg 'workspace 2; exec termite; workspace 1'
-exec --no-startup-id i3-msg 'workspace 3; exec sflphone; workspace 1'
-exec --no-startup-id i3-msg 'workspace 1; exec chromium'
 
-#exec i3-sensible-terminal
-
+# Always make equalizer floating
+for_window [class="(?i)qpaeq"] floating enable
 
 #bindsym $mod+Shift+w exec i3lock -c 000000
 bindsym $mod+Shift+w exec ~/.i3/pixelate_lock.sh
-#bindsym $mod+Shift+w exec slimlock
 
 bindsym Print exec scrot
 bindsym XF86AudioPlay exec ~/.i3/musickeys.sh toggle
