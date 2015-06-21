@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+function get_screen_resolution {
+  xdpyinfo | grep dimensions | awk '{print $2;}'
+}
+
+if [ $# -eq 1 ]
+then
+  res=`get_screen_resolution`
+  # Center the image. Fill the screen whil preserving scale. 
+  # Then crop the excess.
+  convert $1 -resize $res^ -gravity center -extent $res ~/.wallpaper
+  ~/.fehbg
+else
+  echo "Usage: $0 <image-path>"
+fi

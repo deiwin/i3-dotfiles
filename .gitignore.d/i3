@@ -37,3 +37,5 @@
 !/.i3/pixelate_lock.sh
 !/.i3/rename_workspace.sh
 !/.xinitrc
+!/bin
+!/bin/set-wallpaper
