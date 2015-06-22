@@ -47,9 +47,9 @@ yaourt -S i3 dunst gsimplecal i3blocks j4-dmenu-desktop-git dmenu2 termite compt
 vcsh clone git@github.com:deiwin/i3-dotfiles.git i3
 
 # Set background
+cd
 mkdir -p Pictures/Wallpapers
 wget -O Pictures/Wallpapers/simple_rocket.png 'http://static.simpledesktops.com/uploads/desktops/2012/07/03/simpledesktops.png'
-ln -s Pictures/Wallpapers/simple_rocket.png .wallpaper
-feh  --bg-scale .wallpaper
+bin/set-wallpaper Pictures/Wallpapers/simple_rocket.png
 ```
 PS. the background is stolen from a [/r/unixporn thread](http://www.reddit.com/r/unixporn/comments/2q6nbm/boringwmi3_fake_it_till_you_make_it/)
