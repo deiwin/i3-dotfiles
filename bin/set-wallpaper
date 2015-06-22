@@ -11,7 +11,7 @@ then
   # Center the image. Fill the screen whil preserving scale. 
   # Then crop the excess.
   convert $1 -resize $res^ -gravity center -extent $res ~/.wallpaper
-  ~/.fehbg
+  feh  --bg-scale ~/.wallpaper
 else
   echo "Usage: $0 <image-path>"
 fi
