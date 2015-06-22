@@ -25,21 +25,13 @@ font pango:Droid Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -p "run:"'
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -p "run:"'
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -dim 0.5" --term="termite"
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -121,7 +113,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+# rename the current workspace
 bindsym $mod+t exec ~/.i3/rename_workspace.sh
 
 # Make the currently focused window a scratchpad
@@ -189,9 +181,10 @@ exec --no-startup-id i3-msg 'workspace 2; exec termite; workspace 1'
 # Always make equalizer floating
 for_window [class="(?i)qpaeq"] floating enable
 
-#bindsym $mod+Shift+w exec i3lock -c 000000
+# Screen lock
 bindsym $mod+Shift+w exec ~/.i3/pixelate_lock.sh
 
+# Media keys
 bindsym Print exec scrot
 bindsym XF86AudioPlay exec ~/.i3/musickeys.sh toggle
 bindsym XF86AudioStop exec ~/.i3/musickeys.sh stop
@@ -199,12 +192,13 @@ bindsym XF86AudioNext exec ~/.i3/musickeys.sh next
 bindsym XF86AudioPrev exec ~/.i3/musickeys.sh prev
 
 # Floating
-
 new_window 1pixel
 new_float 1pixel
 
-# Startup
+# Disabled 'cause annoying
+focus_follows_mouse no
 
+# Startup
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id redshift -l 58.23:26.43
@@ -216,7 +210,5 @@ exec --no-startup-id caffeine
 
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id dropbox
-
-focus_follows_mouse no
 
 exec i3lock -u -i ~/.wallpaper
