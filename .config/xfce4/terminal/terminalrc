@@ -18,9 +18,9 @@ MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 MiscScrollAlternateScreen=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
-ColorCursor=#adadb7b7c1c1
-ColorForeground=#adadb7b7c1c1
-ColorBackground=#1a1a1b1b1d1d
-ColorPalette=#1d1d1f1f2121;#abab65654848;#8888aaaa5555;#8e8e6b6b2323;#444466668888;#610861086108;#555588888888;#aaaabbbbcccc;#444455556666;#dddd77777777;#bbbbdddd8888;#ccccb0b05f5f;#77779999bbbb;#ababacacaeae;#8888bbbbbbbb;#ddddeeeeffff
+ColorCursor=#4d5761
+ColorForeground=#adb7c1
+ColorBackground=#1a1b1d
+ColorPalette=#1d1f21;#ab6548;#88aa55;#8e6b23;#446688;#616161;#558888;#aabbcc;#445566;#dd7777;#bbdd88;#877a38;#7799bb;#abacae;#367169;#ddeeff
 Term=xterm-color
 
