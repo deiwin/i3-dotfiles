@@ -25,7 +25,6 @@ font pango:Droid Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
@@ -33,10 +32,6 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
@@ -118,7 +113,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+# rename the current workspace
 bindsym $mod+t exec ~/.i3/rename_workspace.sh
 
 # Make the currently focused window a scratchpad
@@ -179,19 +174,19 @@ bar {
 
 bindsym $mod+Shift+w exec --no-startup-id dm-tool switch-to-greeter
 
+# Media keys
 bindsym Print exec scrot
 
 # Floating
-
 new_window 1pixel
 new_float 1pixel
 
-# Startup
+# Disabled 'cause annoying
+focus_follows_mouse no
 
+# Startup
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id redshift -l 58.23:26.43
 exec --no-startup-id setxkbmap -layout us,ee -option grp:caps_toggle
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id caffeine
-
-focus_follows_mouse no
