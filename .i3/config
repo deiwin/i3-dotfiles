@@ -185,7 +185,8 @@ for_window [class="(?i)qpaeq"] floating enable
 bindsym $mod+Shift+w exec ~/.i3/pixelate_lock.sh
 
 # Media keys
-bindsym Print exec scrot
+bindsym --release Print exec scrot $HOME/Pictures/Screenshots/'%Y-%m-%d_%H-%M-%S_$wx$h'.png
+bindsym --release Shift+Print exec scrot -s $HOME/Pictures/Screenshots/'%Y-%m-%d_%H-%M-%S_$wx$h'.png
 bindsym XF86AudioPlay exec ~/.i3/musickeys.sh toggle
 bindsym XF86AudioStop exec ~/.i3/musickeys.sh stop
 bindsym XF86AudioNext exec ~/.i3/musickeys.sh next
@@ -211,4 +212,3 @@ exec --no-startup-id caffeine
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id dropbox
 
-exec i3lock -u -i ~/.wallpaper_lock
