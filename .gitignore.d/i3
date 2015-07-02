@@ -36,6 +36,11 @@
 !/.i3/musickeys.sh
 !/.i3/pixelate_lock.sh
 !/.i3/rename_workspace.sh
+!/.mozilla
+!/.mozilla/firefox
+!/.mozilla/firefox/bnmb7fkm.default
+!/.mozilla/firefox/bnmb7fkm.default/chrome
+!/.mozilla/firefox/bnmb7fkm.default/chrome/userChrome.css
 !/.xinitrc
 !/bin
 !/bin/set-wallpaper
