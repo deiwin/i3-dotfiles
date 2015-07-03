@@ -212,3 +212,5 @@ exec --no-startup-id caffeine
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id dropbox
 
+exec i3lock -u -i ~/.wallpaper_lock
+
