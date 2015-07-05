@@ -43,4 +43,5 @@
 !/.mozilla/firefox/bnmb7fkm.default/chrome/userChrome.css
 !/.xinitrc
 !/bin
+!/bin/scrot-with-message
 !/bin/set-wallpaper
